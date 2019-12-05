@@ -1,5 +1,7 @@
-# AWS-SNS-SMS with NodeJS
+
 Download this repository
+
+ `$ git colne https://github.com/harshchinu/Finin-Intern.git`
 
 `$ npm install`
 
@@ -19,17 +21,15 @@ eg,
 
 You want to send a message to a number,
 
-The country code is 44
+The country code is 91
 
-The mobile number is (0)7700 900123
+The mobile number is (0)90331 23754
 
-The E.164 format would be +447700900123
+The E.164 format would be +919033123754
 
 Remove the + character
 
 Then Visit 
 
 `http://localhost:3000/?message=my message&number=447700900123&subject=My Subject`
-
-## Video Tutorial how to install and setup the SMS API
 

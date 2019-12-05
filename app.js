@@ -18,10 +18,11 @@ app.get('/', (req, res) => {
         } 
         return OTP; 
     } 
-      
+    
+    var otp=generateOTP();
 
     var params = {
-        Message: generateOTP(),
+        Message: otp,
         PhoneNumber: '+' + req.query.number,
         MessageAttributes: {
             'AWS.SNS.SMS.SenderID': {
