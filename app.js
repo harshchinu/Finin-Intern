@@ -9,8 +9,19 @@ app.get('/', (req, res) => {
     console.log("Message = " + req.query.message);
     console.log("Number = " + req.query.number);
     console.log("Subject = " + req.query.subject);
+
+    function generateOTP() { 
+        var digits = '0123456789'; 
+        let OTP = ''; 
+        for (let i = 0; i < 4; i++ ) { 
+            OTP += digits[Math.floor(Math.random() * 10)]; 
+        } 
+        return OTP; 
+    } 
+      
+
     var params = {
-        Message: req.query.message,
+        Message: generateOTP(),
         PhoneNumber: '+' + req.query.number,
         MessageAttributes: {
             'AWS.SNS.SMS.SenderID': {
