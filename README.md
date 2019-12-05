@@ -13,7 +13,7 @@ Edit `.env` and enter your correct AWS access key, secret and region.
 
 Open browser and visit something like,
 
-`http://localhost:3000/?message=[The Message]&number=[The Number]&subject=[The Subject]`
+`http://localhost:3000/?number=[The Number]&subject=[The Subject]`
 
 The mobile number should be E.164 format but without the + character.
 
@@ -31,5 +31,5 @@ Remove the + character
 
 Then Visit 
 
-`http://localhost:3000/?message=my message&number=447700900123&subject=My Subject`
+`http://localhost:3000/?number=919033123754&subject=My Subject`
 
