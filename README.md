@@ -7,7 +7,7 @@ Download this repository
 
 Create a specific AWS IAM user and add to group 'AmazonSNSFullAccess'
 
-Rename the `.env` file to `.env` and enter your correct AWS access key, secret and region.
+Edit `.env` and enter your correct AWS access key, secret and region.
 
 `$ npm start`
 
